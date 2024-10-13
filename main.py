@@ -37,12 +37,12 @@ def main():
     block_websites(sites_to_block)
     print("Websites blocked.")
 
-    # try:
-    #     while True:
-    #         time.sleep(60)  # Check every minute
-    # except KeyboardInterrupt:
-    #     unblock_websites(sites_to_block)
-    #     print("Websites unblocked.")
+    try:
+        while True:
+            time.sleep(60)  # Check every minute
+    except KeyboardInterrupt:
+        unblock_websites(sites_to_block)
+        print("Websites unblocked.")
 
 
 if __name__ == "__main__":
